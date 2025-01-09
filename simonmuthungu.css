@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #f0f0f0;
+}
+
+.hero-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 2rem;
+}
+
+.project-card {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  justify-content: space-between; /* Push image to the right */
+  align-items: flex-start; /* Align items to the top */
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.project-card .text-content {
+  flex: 1; /* Allow the text content to take up remaining space */
+}
+
+.project-card img {
+  width: 150px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 1rem; /* Add spacing between text and image */
+  align-self: center; 
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  background-color: #eee;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact li {
+  margin: 0.8rem 0;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0073e6;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #005bb5;
+}
+
+.contact i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Make the dates smaller */
+.dates {
+  font-size: 0.9rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem; /* Add spacing between dates and description */
+}
+
+/* Ensure description starts on a new line */
+.description {
+  display: block; /* Force block behavior to ensure it starts on a new line */
+  margin-top: 0.5rem;
+  line-height: 1.5; /* Improve readability */
+}
+
+
+
+/* mobile designs */
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: row; /* Keep content in a row layout */
+    justify-content: space-between; /* Push text and image apart */
+    align-items: flex-start; /* Align items to the top */
+    text-align: left; /* Justify text */
+  }
+
+  .project-card img {
+    width: 100px; /* Reduce image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 1rem; /* Add spacing between text and image */
+  }
+
+  .project-card .text-content {
+    font-size: 0.9rem; /* Reduce text size */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+}
+
